@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Mrs+Saint+Delafield&family=Poller+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background-color: #080a0b;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button-link {
+    color: #6eeadc;
+    text-decoration: none;
+    font-size: 18px;
+    width: 10%;
+    height: 10%;
+    padding: 10px 20px;
+    background-color: #862910;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #dfd58e;
+}
+
+
+.guitar-name,
+.guitarHomepage {
+    font-size: 44px;
+    color: #6d2013;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left:  10px;
+    font-style: italic;
+    font-family: "Mrs Saint Delafield", cursive;
+    letter-spacing: 4px;
+}
+
+.texGuitarAbout,
+.textHome,
+.serviceText,
+.contact-container,
+.aboutPageControl
+{
+    font-size: 12px;
+    color: rgb(234, 228, 228);
+    font-style: italic;
+    margin: 60px 40px 40px;
+}
+
+
+.containerServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.click-message {
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(105, 32, 23);
+}
+
+
+
+.home-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.home-layout p {
+    flex: 2;
+
+}
+
+.home-layout .image-grid-container {
+    flex: 0.25;
+
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 20px;
+    gap: 5px;
+}
+
+.image-grid img {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    gap: 10px;
+
+}
+
+.aboutPageControl {
+    display: flex;
+    margin-top: 30px;
+    margin-right:  10px;
+}
+
+/* --- Анимация нот --- */
+.notes-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+.note-animation {
+    position: absolute;
+    font-size: 50px;
+    color: #1c1b49;
+    opacity: 0;
+    animation-name: notes-move;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.note-1 {
+    animation-delay: 0s;
+    animation-duration: 20s;
+    top: 10%;
+    left: 20%;
+}
+.note-2 {
+    animation-delay: 2s;
+    animation-duration: 15s;
+    top: 50%;
+    left: 60%;
+    font-size: 30px;
+    color: #8c9fae;
+}
+.note-3 {
+    animation-delay: 10s;
+    animation-duration: 25s;
+    top: 80%;
+    left: 40%;
+    font-size: 40px;
+    color: #5d758a;
+}
+.note-4 {
+    animation-delay: 5s;
+    animation-duration: 18s;
+    top: 30%;
+    left: 80%;
+    font-size: 60px;
+    color: #dfd27a;
+}
+
+
+.note-5 {
+    animation-delay: 2s;
+    animation-duration: 18s;
+    top: 70%;
+    left: 10%;
+    font-size: 25px;
+    color: #dfd27a;
+}
+
+.note-6 {
+    animation-delay: 8s;
+    animation-duration: 16s;
+    top: 40%;
+    left: 30%;
+    font-size: 35px;
+    color: #e7d964;
+}
+
+.note-7 {
+    animation-delay: 3s;
+    animation-duration: 22s;
+    top: 20%;
+    left: 55%;
+    font-size: 45px;
+    color: #dfd58e;
+}
+
+@keyframes notes-move {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(100vw, -100vh);
+        opacity: 0;
+    }
+}
+
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+
+.video-player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
