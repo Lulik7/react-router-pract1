@@ -9,8 +9,8 @@ function Home() {
 
     return (
         <div>
-            <h2 className="guitarHomepage">Your favourite guitar is<br/>
-                here</h2>
+            <h1 className="guitarHomepage">Your favourite guitar is<br/>
+                here</h1>
 
             <div className="home-layout">
             <p className="textHome"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.

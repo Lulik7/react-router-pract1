@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { DataPics } from '../data/DataPics/';
@@ -19,8 +18,8 @@ function About() {
                     <h3 className="guitar-name">
                         {image.name}
                     </h3>
-                    <p className="texGuitarAbout">{image.description}</p>
-                    <img src={image.image} alt={image.description} style={{ width: '400px', height: '400px' }} />
+                    <p className="textGuitarAbout">{image.description}</p>
+                    <img src={image.image} alt={image.description} style={{ width: '400px', height: '400px', marginTop: '100px', marginRight: '30px' }} />
                 </>
             ) : (
                 <div>
